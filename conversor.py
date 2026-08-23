@@ -2,14 +2,14 @@ numero = float(input("Insira o seu número: "))
 
 conversor = input("Qual conversão escolhe? jarda, pe ou metro? ")
 
+convec_tupla = {'jarda', 'pe', 'metro'}
+
 def jarda_to_pe(conversor):
     print("Escolheu Jarda")
 
 jarda = numero / 3
 if conversor == 'jarda':
     print(jarda)
-
-
 
 def pe_to_metro(conversor):
     print("Escolheu pe")
