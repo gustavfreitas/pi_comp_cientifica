@@ -1,7 +1,7 @@
 # EP1 - Cálculo da Série de Taylor para $y = \sin(x^2)$
 
 **Disciplina:** Projeto Integrador: Computação Científica.
-**Integrantes:** Gustavo Souza Freitas, Miguel Hakira Mendes Kato, Gabriel Mendes.
+**Integrantes:** Gustavo Souza Freitas, Miguel Hakira Mendes Kato, Gabriel Martins.
 
 Este repositório contém a implementação algorítmica e a fundamentação teórica para a aproximação da função $y = \sin(x^2)$ através do desenvolvimento em Série de Taylor (Maclaurin), otimizado para complexidade linear $O(N)$.
 
