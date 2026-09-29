@@ -118,5 +118,13 @@ plt.xlabel("Número de Iterações (N)")
 plt.ylabel("Erro Absoluto (escala log)")
 plt.grid(True, which="both", ls="--")
 
+# Gráfico 3: Tempo de Execução vs N 
+plt.subplot(1, 3, 3)
+plt.plot(ns_para_plot, tempos_plot, marker='s', color='green')
+plt.title(f"Velocidade de Processamento (x={x_alvo})")
+plt.xlabel("Número de Iterações (N)")
+plt.ylabel("Tempo de Execução (segundos)")
+plt.grid(True)
+
 plt.tight_layout()
 plt.show()
