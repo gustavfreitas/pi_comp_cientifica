@@ -108,5 +108,15 @@ for n in ns_para_plot:
     soma, _, t = taylor_seno_x2(x_alvo, max_n=n, tol=0)  # Tol 0 para forçar até N
     erros_plot.append(abs(math.sin(x_alvo**2) - soma))
     tempos_plot.append(t)
+
+# Gráfico 2: Erro vs N
+plt.subplot(1, 3, 2)
+plt.plot(ns_para_plot, erros_plot, marker='o', color='red')
+plt.yscale('log')  # Escala logarítmica para ver a queda drástica do erro
+plt.title(f"Erro Absoluto por Iteração (x={x_alvo})")
+plt.xlabel("Número de Iterações (N)")
+plt.ylabel("Erro Absoluto (escala log)")
+plt.grid(True, which="both", ls="--")
+
 plt.tight_layout()
 plt.show()
