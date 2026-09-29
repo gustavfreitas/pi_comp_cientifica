@@ -34,6 +34,8 @@ def taylor_seno_x2(x, max_n=30, tol=1e-15):
     
     return soma, n_executados, exec_time
 
+# Tabela de Valores Utilizados
+
 print("GERANDO TABELA DE VALORES")
 valores_x = [0.1, 0.5, 1.0, 1.5, 2.0, 2.5]
 resultados = []
@@ -63,3 +65,48 @@ if 'IPython' in sys.modules:
     display(df_resultados)
 else:
     print(df_resultados.to_string(index=False))
+
+# Gráficos
+
+print("\nGERANDO GRÁFICOS...")
+
+plt.figure(figsize=(15, 5))
+
+# Gráfico 1: Aproximação da Função
+
+plt.subplot(1, 3, 1)
+# Otimização visual: reduzido o domínio para -2.2 a 2.2 para o gráfico focar na região 
+# de convergência onde as aproximações se moldam e evitar a distorção extrema das bordas
+x_vals = np.linspace(-2.2, 2.2, 400)
+y_real = np.sin(x_vals**2)
+
+plt.plot(x_vals, y_real, label="Real: sen(x^2)", color="black", linewidth=2.5)
+
+# Testando limites diferentes de N de maneira limpa
+for n_teste in[2,4,8]:
+    # Uma forma mais eficiente de gerar as aproximações do gráfico mantendo a lógica de somatório
+    y_aprox = np.zeros_like(x_vals)
+    for n in range(n_teste):
+        y_aprox += ((-1)**n * x_vals**(4*n+2)) / math.factorial(2*n+1)
+        
+    plt.plot(x_vals, y_aprox, label=f"Taylor (N={n_teste})", linestyle="--")
+
+plt.title("Aproximações da Série de Taylor")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.ylim(-1.5, 1.5)
+plt.legend()
+plt.grid(True)
+
+# --- Coletar dados de estresse progressivo de N para os próximos gráficos ---
+x_alvo = 2.0  # Usamos x=2.0 pois requer mais processamento que x=0.5
+ns_para_plot = range(1, 16)
+erros_plot = []
+tempos_plot = []
+
+for n in ns_para_plot:
+    soma, _, t = taylor_seno_x2(x_alvo, max_n=n, tol=0)  # Tol 0 para forçar até N
+    erros_plot.append(abs(math.sin(x_alvo**2) - soma))
+    tempos_plot.append(t)
+plt.tight_layout()
+plt.show()
