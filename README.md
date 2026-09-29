@@ -41,6 +41,7 @@ Simplificando as potências de $x$ e expandindo o fatorial do denominador:
 * $\frac{x^{4n+6}}{x^{4n+2}} = x^4$
 * $(2n+3)! = (2n+3) \cdot (2n+2) \cdot (2n+1)!$
 
+
 $$L = \lim_{n \to \infty} \left\vert{} \frac{x^4 \cdot (2n+1)!}{(2n+3)(2n+2)(2n+1)!} \right\vert{} = \lim_{n \to \infty} \frac{x^4}{(2n+3)(2n+2)}$$
 
 Como o termo $x^4$ não depende do limite de $n$:
