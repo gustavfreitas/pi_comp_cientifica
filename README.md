@@ -156,3 +156,5 @@ Execute o script principal para gerar a tabela no terminal e renderizar a janela
 ```bash
 python algoritmo_taylor.py
 ```
+
+▶️ Apresentação e Defesa do Código: ![Video](https://www.youtube.com/watch?v=GWHMSriXv_k&t=48s)
