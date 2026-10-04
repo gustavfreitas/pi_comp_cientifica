@@ -97,6 +97,9 @@ O gráfico abaixo demonstra visualmente como o Polinômio de Taylor se comporta 
 
 ---
 
+📄 Nota Matemática: Toda a prova de convergência, derivação da série por substituição algébrica e justificativa da redução de complexidade para $O(N)$ estão detalhadas passo a passo no arquivo complementar ![Demonstracao_Matematica.md](Demonstracao_Matematica.md) neste repositório.
+
+
 ## ⚙️ Guia de Customização e Parâmetros
 
 O script foi projetado para ser modular, permitindo que você altere o comportamento do cálculo e dos testes modificando constantes simples no topo ou no corpo do código.
