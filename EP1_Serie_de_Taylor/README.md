@@ -78,7 +78,7 @@ O script gera automaticamente três análises integradas:
 
 Abaixo, observa-se a saída do terminal contendo a comparação entre o valor real (gerado pela biblioteca `math.sin`) e a aproximação calculada pelo algoritmo. Nota-se que o erro absoluto atinge a ordem de grandeza da precisão de máquina (10⁻¹⁶) com pouquíssimas iterações:
 
-![Tabela de Valores do Terminal](src/Tabela_de_Valores.png)
+![Tabela de Valores do Terminal](../src/Tabela_de_Valores.png)
 
 ---
 
@@ -86,14 +86,14 @@ Abaixo, observa-se a saída do terminal contendo a comparação entre o valor re
 
 O gráfico abaixo demonstra visualmente como o Polinômio de Taylor se comporta como uma aproximação local. Para N=2 (grau 6), o polinômio converge rigorosamente apenas próximo à origem (|x| < 1). À medida que o grau cresce para N=8 (grau 34), a curva polinomial acompanha perfeitamente as oscilações da função real no intervalo \([-2, 2]\):
 
-![Aproximações da Série de Taylor](src/Gráfico_Aproximação.png)
+![Aproximações da Série de Taylor](../src/Gráfico_Aproximação.png)
 
 ---
 
 3. **Gráfico de Erro (Centro):** A escala logarítmica expõe analiticamente a convergência superlinear da série. O erro decai de forma exponencial à medida que N aumenta, atingindo o limite estável próximo a 14 iterações para o ponto crítico x = 2.0.
 * **Gráfico de Tempo (Direita):** O comportamento do tempo de execução valida a estabilidade da otimização de transição de termos em O(N), mantendo o processamento na escala de microssegundos (10⁻⁵ s) mesmo para acúmulos sucessivos:
 
-![Análise de Erro e Tempo de Execução](src/Gráfico_tempo_execucao.png)
+![Análise de Erro e Tempo de Execução](../src/Gráfico_tempo_execucao.png)
 
 ---
 
