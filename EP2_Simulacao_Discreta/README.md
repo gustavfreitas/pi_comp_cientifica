@@ -5,7 +5,7 @@ Este projeto é a entrega do Exercício-Programa 2 (EP2) da disciplina de Comput
 **Integrantes do Grupo:**
 * Gustavo Souza Freitas
 * Miguel Hakira Mendes Kato
-* Gabriel Mendes
+* Gabriel Martins
 
 ---
 
