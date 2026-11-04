@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🚲 EP2 - Simulação de Eventos Discretos: Bicicletas Compartilhadas
 
 Entrega do Exercício-Programa 2 (EP2) de Computação Científica. Usa a biblioteca **SimPy** para simular um sistema de bicicletas compartilhadas (inspirado no Bike Itaú / Tembici, São Paulo) como um sistema de filas: o **usuário** espera por uma **bicicleta** (servidor) numa estação vazia, pedala (tempo de serviço) e depois espera por uma **vaga** numa estação cheia.
